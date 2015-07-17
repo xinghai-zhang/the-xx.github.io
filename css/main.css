@@ -1,0 +1,187 @@
+header {
+    text-align: center;
+    color: #000;
+
+}
+
+header .intro-text {
+  padding-top: 48px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header .intro-text #intro-lead-in {
+  margin-bottom: 24px;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+  font-size: 15px;
+  line-height: 22px;
+
+}
+header .intro-text #intro-pre-heading {
+  font-size: 12px;
+  padding-bottom: 12px;
+  color:#d3d3d3;
+}
+header .intro-text #intro-heading {
+  font-size: 50px;
+  line-height: 50px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 24px;
+  margin-bottom: 12px;
+  margin-top: -12px
+}
+
+
+
+#body-wraper{
+	
+}
+
+.left,
+.middle,
+.right {
+  position: relative;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-family:"Lato","Myriad Set Pro", "Lucida Grande", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  float: left;
+ 
+}
+
+.left{
+  width:20%;
+  margin-left: 10%;
+}
+
+.middle{
+
+}
+.right{
+ width: 20%;
+ margin-right: 10%;
+ float:right;
+
+}
+
+.right h1 {
+  
+  padding-bottom: 1px;
+  margin-bottom: 3px;
+  margin-top: 24px;
+}
+
+.right h2 {
+  font-size: 16.8px;
+  margin-bottom: 4px;
+  width: 100%;
+  border-bottom-width: 1px;
+}
+
+.right ul {
+  font-size: 12.8px;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+.right ul li  {
+  margin-top: 0px;
+  display: inline;
+}
+
+.right p  {
+  font-size: 12.8px;
+}
+
+.right i {
+  margin: auto;
+}
+
+.right li:last-child:after {
+  content: "."
+}
+
+
+.right li:after  {
+  content: ", "
+}
+
+.link li:after  {
+  content: "   +"
+}
+
+.right footer {
+  font-size: 8px;
+  margin-bottom: 0;
+  position: absolute;
+}
+
+.education,
+.skill,
+.link{
+	width: 100%;
+	position: relative;
+	float: left;
+	border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom
+  padding-bottom: 12px;
+	
+}
+
+
+ .education{
+ width: 100%;
+ height: auto;
+ display: inline-block;
+ 
+}
+
+.link{
+
+
+  clear:both;
+}
+
+.education #edu-img,
+.education #edu-text{
+	position: relative;
+	float: left;
+	
+}
+.education #edu-heading{
+  margin-bottom: 1px;
+}
+.education #edu-img {
+  width: 50px;
+  height: 50px;
+ 
+}
+
+.education #edu-text {
+	padding-left: 6px;
+	width: auto;
+	
+	margin-top: -10px;
+ 
+}
+
+.education #school{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+
+.fa-github:hover{
+  color:black;
+}
+.fa-linkedin:hover{
+  color:#007bb6;
+}
+
