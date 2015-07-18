@@ -46,11 +46,12 @@ header .intro-text #intro-heading {
 .right {
   position: relative;
   min-height: 1px;
+  margin: 6px;
   padding-right: 12px;
   padding-left: 12px;
   font-family:"Lato","Myriad Set Pro", "Lucida Grande", "Helvetica Neue",Helvetica,Arial,sans-serif;
-  border-width: 1px;
-  border-style: solid;
+  /*border-width: 1px;
+  border-style: solid;*/
   float: left;
  
 }
@@ -113,7 +114,7 @@ header .intro-text #intro-heading {
 }
 
 .link li:after  {
-  content: "   +"
+  content: "   "
 }
 
 .right footer {
@@ -177,6 +178,13 @@ header .intro-text #intro-heading {
   max-height: 50px;
 }
 
+.fa-github{
+  color: gray;
+}
+
+.fa-linkedin{
+  color: gray;
+}
 
 .fa-github:hover{
   color:black;
@@ -184,17 +192,19 @@ header .intro-text #intro-heading {
 .fa-linkedin:hover{
   color:#007bb6;
 }
-
-.link #challengepost {
- background-image: url('visual/challengepost_icon_bw.png');
- width:18px;
- height:18px;
- display: inline-block;
+#kaggle{
+  margin: 6px;
 }
-
-.link #challengepost a:hover{
-  background: url('visual/challengepost_icon.png');
+#challengepost{
+  margin-right: 6px;
 }
 
 
-
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
