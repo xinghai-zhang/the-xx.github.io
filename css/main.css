@@ -185,3 +185,16 @@ header .intro-text #intro-heading {
   color:#007bb6;
 }
 
+.link #challengepost {
+ background-image: url('visual/challengepost_icon_bw.png');
+ width:18px;
+ height:18px;
+ display: inline-block;
+}
+
+.link #challengepost a:hover{
+  background: url('visual/challengepost_icon.png');
+}
+
+
+
