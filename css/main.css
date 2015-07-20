@@ -46,26 +46,26 @@ header .intro-text #intro-heading {
 .right {
   position: relative;
   min-height: 1px;
-  margin: 6px;
-  padding-right: 12px;
-  padding-left: 12px;
+  
+
   font-family:"Lato","Myriad Set Pro", "Lucida Grande", "Helvetica Neue",Helvetica,Arial,sans-serif;
-  /*border-width: 1px;
+ /* border-width: 1px;
   border-style: solid;*/
   float: left;
  
 }
 
 .left{
-  width:20%;
+  width:10%;
   margin-left: 10%;
 }
 
 .middle{
-
+  width: 54%;
+  height: auto;
 }
 .right{
- width: 20%;
+ width: 15%;
  margin-right: 10%;
  float:right;
 
@@ -200,11 +200,22 @@ header .intro-text #intro-heading {
 }
 
 
-.chart div {
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
+.area1 {
+  fill: steelblue;
+  opacity: 0.5;
+  stroke-width: 05px;
 }
+
+.area2 {
+  fill: grey;
+  opacity: 0.5;
+  stroke-width: 05px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #777;
+  shape-rendering: crispEdges;
+}
+
