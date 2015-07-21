@@ -212,10 +212,18 @@ header .intro-text #intro-heading {
   stroke-width: 05px;
 }
 
+.area3 {
+  fill: yellow;
+  opacity: 0.5;
+  stroke-width: 05px;
+}
+
 .axis path,
 .axis line {
   fill: none;
   stroke: #777;
   shape-rendering: crispEdges;
 }
+
+
 
