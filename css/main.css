@@ -42,14 +42,19 @@ header .intro-text #intro-heading {
 }
 
 .left,
+.left-0,
+.left-1,
+.left-2,
 .middle,
+.middle-0,
+.middle-1,
 .right {
   position: relative;
   min-height: 1px;
   
 
   font-family:"Lato","Myriad Set Pro", "Lucida Grande", "Helvetica Neue",Helvetica,Arial,sans-serif;
- /* border-width: 1px;
+ /*border-width: 1px;
   border-style: solid;*/
   float: left;
  
@@ -58,6 +63,15 @@ header .intro-text #intro-heading {
 .left{
   width:10%;
   margin-left: 10%;
+}
+
+.left-0,
+.left-1,
+.left-2,
+.middle-0,
+.middle-1{
+  width: 100%;
+  height: auto;
 }
 
 .middle{
@@ -223,6 +237,22 @@ header .intro-text #intro-heading {
   fill: none;
   stroke: #777;
   shape-rendering: crispEdges;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+path.slice{
+  stroke-width:2px;
+}
+
+polyline{
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
 }
 
 
