@@ -2,12 +2,14 @@
 <html>
 	<head>
 		<title>Xinghai Zhang</title>
+
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<script src="d3/d3.min.js" charset="utf-8"></script>
-		
 		<script language="javascript" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
 	</head>
 	<!-- Header -->
 	<header>
@@ -23,7 +25,7 @@
 
  <!-- <script src = "js/whatIWantedToDo.js"></script> -->
 	<body>
-		<div id = "body-wraper">
+	<div id = "body-wraper">
 		<div class = "left">
 			<div class = "left-0">
  				<h2>What I Thought I Would Do</h2>
@@ -56,11 +58,12 @@
  				<div class="container">
         			<div class="jumbotron">
         				<h2>m2</h2>
-        				<svg id="donut" width ="100%" viewBox="0 0 500 500"></svg>
-	 						<script src = "js/donut.js"></script>
+        				 <!--   <svg id="donut" width ="100%" viewBox="0 0 500 500"></svg>
+	 						<script src = "js/donut.js"></script> -->
        				</div>
     			</div>
  			</div>
+ 		
 		</div>
 		<div class = "right">
 			<div class="education">
@@ -105,11 +108,43 @@
 					<li><a id ="challengepost"href = "http://challengepost.com/the-xx"><img  src='visual/challengepost_icon_bw.png' width='20' height='20' onmouseover="this.src='visual/challengepost_icon.png';" onmouseout="this.src='visual/challengepost_icon_bw.png';" /></a>
 					<li><a id="linkedin" href="https://www.linkedin.com/in/zhangxinghai"><i class="fa fa-linkedin fa-2x"></i></a></li>
 				</ul>
+				<h2>RESUME</h2>
+				<ul>
+					<li>Download it <a href="file/Resume.pdf">here</a></li>
+				</ul>
 			</div>
+
 		</div>
-		<p3>
+   <!-- <p3>
 			<iframe width='100%' height='520' frameborder='0' src='https://xinghai.cartodb.com/viz/470ebebc-06fb-11e5-bd18-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-		</p3>
+		</p3> -->
 	</div>
+
+  	  		<div class="slide">
+			     <div>your content 1</div>
+				 <div>your content 2</div>
+				 <div>your content 3</div>
+			</div>
+       		
+
+ 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		 <script type="text/javascript" src="slick-1.5.7/slick/slick.min.js"></script>		
+
+		  <script type="text/javascript">
+		    $(document).ready(function(){
+		      $('.slide').slick({
+		       
+		      dots: true,
+		      infinite: true,
+		      speed: 300,
+		      slidesToShow: 1,
+		      adaptiveHeight: true
+		    
+		      });
+		    });
+		  </script>
+
+
 	</body>
 </html>
