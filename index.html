@@ -5,7 +5,7 @@
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<script src="d3/d3.min.js" charset="utf-8"></script>
 		<script language="javascript" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
@@ -66,9 +66,11 @@
  			</div>
  			<div class = "middle-1">
  				<div class="slide">
-			     	<div>your content 1</div>
-				 	<div>your content 2</div>
-				 	<div>your content 3</div>
+			     	<div><img src='visual/print1.jpg' width='500px' height='auto'></div>
+				 	<div><img src='visual/print2.jpg' width='500px' height='auto'></div>
+				 	<div><img src='visual/print3.jpg' width='500px' height='auto'></div>
+				 	<div><img src='visual/print4.jpg' width='500px' height='auto'></div>
+				 	<div><img src='visual/print5.jpg' width='500px' height='auto'></div>
 				</div>
  			</div>
  			
@@ -134,22 +136,9 @@
 
  		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		 <script type="text/javascript" src="slick-1.5.7/slick/slick.min.js"></script>		
+		 <script type="text/javascript" src="lib/slick-1.5.7/slick/slick.min.js"></script>		
 
-		  <script type="text/javascript">
-		    $(document).ready(function(){
-		      $('.slide').slick({
-		       
-		      dots: true,
-		      infinite: true,
-		      speed: 300,
-		      slidesToShow: 1,
-		      adaptiveHeight: true
-		    
-		      });
-		    });
-		  </script>
-
+		  <script type="text/javascript" src="js/slide.js"></script>		
 
 	</body>
 </html>
