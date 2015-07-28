@@ -263,3 +263,8 @@ polyline{
   margin: auto;
   width: 60%;
 }
+
+.slick-slide img
+{
+   display: inline-block;
+}
