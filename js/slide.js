@@ -1,12 +1,10 @@
  $(document).ready(function(){
    $('.slide').slick({
-    
    dots: true,
    infinite: true,
-   speed: 300,
-   centerMode: true,
-   centerPadding: '20px',
-   slidesToShow: 3,
+   speed: 500,
+   fade: true,
+   cssEase: 'linear',
    variableWidth: true
    });
  });
