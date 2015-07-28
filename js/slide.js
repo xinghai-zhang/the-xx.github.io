@@ -4,7 +4,8 @@
    infinite: true,
    speed: 500,
    fade: true,
-   variableWidth: true,
-   cssEase: 'linear'
+    slidesToShow: 1,
+   centerMode: true,
+   variableWidth: true
    });
  });
