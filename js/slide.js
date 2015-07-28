@@ -4,9 +4,9 @@
    dots: true,
    infinite: true,
    speed: 300,
-   slidesToShow: 1,
    centerMode: true,
-   centerPadding: '12px',
+   centerPadding: '20px',
+   slidesToShow: 3,
    variableWidth: true
    });
  });
