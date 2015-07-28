@@ -6,6 +6,7 @@
    speed: 300,
    slidesToShow: 1,
    centerMode: true,
+   centerPadding: '12px',
    variableWidth: true
    });
  });
