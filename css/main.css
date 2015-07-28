@@ -258,3 +258,7 @@ polyline{
   stroke-width: 2px;
   fill: none;
 }
+
+.slide{
+  margin: auto;
+}
