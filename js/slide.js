@@ -5,5 +5,7 @@
    slidesToScroll: 1,
    autoplay: true,
    autoplaySpeed: 2000,
+   centerMode: true,
+   variableWidth: true
    });
  });
