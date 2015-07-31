@@ -18,7 +18,7 @@ var svg = d3.select("#donut").append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-d3.tsv("data.tsv", type, function(error, data) {
+d3.tsv("data/data.tsv", type, function(error, data) {
   var path = svg.datum(data).selectAll("path")
       .data(pie)
     .enter().append("path")
