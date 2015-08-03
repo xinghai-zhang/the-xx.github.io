@@ -1,4 +1,3 @@
-
 var width = 400,
     height = 400,
     radius = Math.min(width, height) / 2;
@@ -6,9 +5,6 @@ var width = 400,
 var color = d3.scale.category20();
 
 var pie = d3.layout.pie()
-    .value(function(d) { return d.apples; })
-    .sort(null);
-var pie2 = d3.layout.pie()
     .value(function(d) { return d.apples; })
     .sort(null);
 
@@ -45,8 +41,6 @@ d3.tsv("data/data.tsv", type, function(error, data) {
     path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
   }
 });
-
-
 
 function type(d) {
   d.apples = +d.apples || 0;
