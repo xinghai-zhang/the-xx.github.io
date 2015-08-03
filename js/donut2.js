@@ -1,5 +1,5 @@
-var width = 200,
-    height = 200,
+var width = 500,
+    height = 500,
     radius = Math.min(width, height) / 2;
 
 var color = d3.scale.category20();
@@ -12,7 +12,7 @@ var arc = d3.svg.arc()
     .innerRadius(radius - 100)
     .outerRadius(radius - 20);
 
-var svg = d3.select("#donut").append("svg")
+var svg = d3.select("#donut2").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
