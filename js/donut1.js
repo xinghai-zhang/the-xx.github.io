@@ -1,6 +1,3 @@
-function donut (x) {
-  // body...
-}
 
 var width = 400,
     height = 400,
@@ -24,12 +21,6 @@ var svg = d3.select("#donut").append("svg")
     .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + width + "," + height / 2 + ")");
-
-var svg2 = d3.select("#donut").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-  .append("g")
-    .attr("transform", "translate(" + 500  + "," + height / 2 + ")");
 
 d3.tsv("data/data.tsv", type, function(error, data) {
   var path = svg.datum(data).selectAll("path")
@@ -55,29 +46,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {
   }
 });
 
-d3.tsv("data/data.tsv", type, function(error, data) {
-  var path2 = svg2.datum(data).selectAll("path")
-      .data(pie2)
-    .enter().append("path")
-      .attr("fill", function(d, i) { return color(i); })
-      .attr("d", arc)
-      .each(function(d) { this._current = d; }); // store the initial angles
 
-  d3.selectAll("input")
-      .on("change2", change);
-
-  var timeout = setTimeout(function() {
-    d3.select("input[value=\"oranges\"]").property("checked", true).each(change);
-  }, 2000);
-
-  function change2() {
-    var value = this.value;
-    clearTimeout(timeout);
-    pie2.value(function(d) { return d[value]; }); // change the value function
-    path2 = path2.data(pie2); // compute the new angles
-    path2.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
-  }
-});
 
 function type(d) {
   d.apples = +d.apples || 0;
