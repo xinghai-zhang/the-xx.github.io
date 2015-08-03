@@ -12,11 +12,11 @@ var arc = d3.svg.arc()
     .innerRadius(radius - 100)
     .outerRadius(radius - 20);
 
-var svg = d3.select("#donut1").append("svg")
+var svg = d3.select("#donut").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    .attr("transform", "translate(" + width / 2 + width + "," + height / 2 + ")");
 
 d3.tsv("data/data.tsv", type, function(error, data) {
   var path = svg.datum(data).selectAll("path")
