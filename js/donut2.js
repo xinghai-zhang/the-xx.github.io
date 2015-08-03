@@ -12,7 +12,7 @@ var arc = d3.svg.arc()
     .innerRadius(radius - 100)
     .outerRadius(radius - 20);
 
-var svg = d3.select("#donut2").append("svg")
+var svg = d3.select("#donut").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
