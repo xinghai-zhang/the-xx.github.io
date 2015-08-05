@@ -263,14 +263,11 @@ polyline{
   margin: auto;
   width: 95%;
 }
-#test1,
-#test2{
+
+#test1{
+  width: 100%;
   position: relative;
   float: left;
-}
-#test1{
-  width:49%;
-}
-#test2{
-  width:49%;
+  border-style:solid;
+  border-width: 1px;
 }

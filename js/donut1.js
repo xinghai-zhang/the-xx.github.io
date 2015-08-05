@@ -58,3 +58,17 @@ function arcTween(a) {
     return arc(i(t));
   };
 }
+
+// ---------------------LABEL----------------------- //
+var dataset = [ "Hacker News", "Dribble", "DataTau", "FiveThirtyEight", "HH:Data Hacker" ];
+
+svg.selectAll("p")
+        .data(dataset)
+        .enter()
+        .append("p")
+        .text(function(d) {
+          return d;
+        })
+        .style("color", function(d, i) {
+          return color(i);
+        });
